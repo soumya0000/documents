@@ -1,0 +1,30 @@
+
+
+----How to ssh from one ec2 instance to another?
+
+
+Method 1 - Create new keys
+
+---On each server run:
+
+ssh-keygen
+
+---Hit enter enter enter. You'll have two files:
+
+.ssh/id_rsa
+.ssh/id_rsa.pub
+
+---On Server A, cat and copy to clipboard the public key:
+
+cat ~/.ssh/id_rsa.pub
+[select and copy to your clipboard]
+
+---ssh into Server B, and append the contents of that to the it's authorized_keys file:
+
+cat >> ~/.ssh/authorized_keys
+[paste your clipboard contents]
+[ctrl+d to exit]
+
+---Now ssh from server A:
+
+ssh -i ~/.ssh/id_rsa private.ip.of.other.server
