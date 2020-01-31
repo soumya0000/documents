@@ -1,0 +1,71 @@
+
+got the link:
+
+https://www.eurovps.com/blog/important-linux-log-files-you-must-be-monitoring/
+
+
+1. What are Linux log files
+
+-Log files are a set of records that Linux maintains for the administrators to keep track of i
+mportant events. They contain messages about the server, including the kernel,
+services and applications running on it.
+
+-Linux provides a centralized repository of log files that can be located under the  /var/log directory.
+
+-The log files generated in a Linux environment can typically be classified into four different categories:
+
+Application Logs
+Event Logs
+Service Logs
+System Logs
+
+
+
+apache server logs
+--------------------
+
+/var/log/httpd
+
+-error log
+-access log
+
+What’s logged here?
+
+-This directory contains the logs recorded by the Apache server.
+-Apache server logging information are stored in two different log files – error_log and access_log.
+
+How can I use these logs?:
+
+-The error_log contains messages related to httpd errors such as memory issues 
+and other system related errors.
+
+-This is the place where Apache server writes events and error records encountered 
+while processing httpd requests.
+
+-If something goes wrong with the Apache webserver, check this log for diagnostic information.
+
+-Besides the error-log file, Apache also maintains a separate list of access_log.
+
+-All access requests received over HTTP are stored in the access_log file.
+
+-Helps you keep track of every page served and every file loaded by Apache.
+
+-Logs the IP address and user ID of all clients that make connection requests to the server.
+
+-Stores information about the status of the access requests, – 
+whether a response was sent successfully or the request resulted in a failure.
+
+
+/var/log/mysqld.log or /var/log/mysql.log
+
+-As the name suggests, this is the MySQL log file.
+-All debug, failure and success messages related to 
+ the [mysqld] and [mysqld_safe] daemon are logged to this file.
+-RedHat, CentOS and Fedora stores MySQL logs 
+ under  /var/log/mysqld.log, while Debian and Ubuntu maintains the log in /var/log/mysql.log directory.
+
+How can I use this log?
+
+-Use this log to identify problems while starting, running, or stopping mysqld.
+-Get information about client connections to the MySQL data directory
+-You can also setup ‘long_query_time’ parameter to log information about query locks and slow running queries. 
