@@ -1,0 +1,19 @@
+Curl:
+=====
+
+how to use curl?
+how to test api with curl?
+curl basic step to step?
+
+curl -command line tool and library for transferring data with URLs
+
+-What's curl used for?
+
+curl is used in command lines or scripts to transfer data. 
+It is also used in cars, television sets, routers, printers,
+audio equipment, mobile phones, tablets, settop boxes, media players 
+and is the internet transfer backbone for thousands of software applications 
+affecting billions of humans daily.
+
+- Who makes curl?
+

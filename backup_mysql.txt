@@ -1,0 +1,12 @@
+How to take backup of mysql database using mysql workbench???
+
+
+1.Click on Management tab at left side in Navigator Panel
+2.Click on Data Export Option
+3.Select Schema
+4.Select Tables
+5.Select required option from dropdown below the tables list as per your requirement
+6.Select Include Create schema checkbox
+7.Click on Advance option
+8.Select Complete insert checkbox in Inserts Panel
+9.Start Export
