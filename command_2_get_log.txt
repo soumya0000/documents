@@ -1,0 +1,163 @@
+Commands to get running logs:
+==================================
+
+1. Tail command is used to see the running logs.
+
+
+In the first example the command tail needs the -f argument to follow the content of a file.
+
+-   $ sudo tail -f /var/log/apache2/access.log
+
+The second version of the command is actually a command itself: tailf. 
+You won’t need to use the -f switch because the command is built-in with the -f argument
+
+-   $ sudo tailf /var/log/apache2/access.log
+
+
+The tail -F will keep track if new log file being created and will start following the new 
+file instead of the old file.
+
+
+-   $ sudo tail -F /var/log/apache2/access.log
+
+However, by default, tail command will display the last 10 lines of a file.
+For instance, if you want to watch in real time only 
+the last two lines of the log file, use the -n file combined with the -f flag, as shown in the below example.
+
+-   $  sudo tail -n2 -f /var/log/apache2/access.log
+
+
+
+2. Multitail Command – Monitor Multiple Log Files in Real Time
+
+
+$ sudo yum install multitail
+
+To display the output of two log file simultaneous, execute the command as shown in the below example.
+
+-- $ sudo multitail /var/log/apache2/access.log /var/log/apache2/error.log
+
+3. lnav Command – Monitor Multiple Log Files in Real Time
+
+  To install lnav utility in Debian and RedHat based Linux distributions by issuing the below command.
+
+$ sudo yum install lnav
+
+Watch the content of two log files simultaneously by issuing the command as shown in the below example
+
+--$ sudo lnav /var/log/apache2/access.log /var/log/apache2/error.log
+
+
+
+4. less Command – Display Real Time Output of Log Files
+
+
+As with tail utility, pressing Shift+F in a opened file in less will start following the end of the file. 
+Alternatively, you can also start less with less +F flag to enter to live watching of the file.
+
+--$ sudo less +F  /var/log/apache2/access.log
+
+
+
+
+Petit is a free and open source command line based log analysis tool for Unix-like as well as Cygwin systems, 
+designed to rapidly analyze log files in enterprise environments
+
+
+Petit Features
+=================
+-Supports for log analysis.
+-Auto-detects and supports various log file formats( e.g. Syslog, Apache Access, Apache Error, Snort Log, Linux Secure Log, and raw log files).
+-Supports for log Hashing .
+-Supports command line graphing.
+-Supports for word discovery and count with common stop-words within log data.
+-Supports for log reduction for easy reading.
+-Provides various default and specially made filters.
+-Supports fingerprints, useful in identifying and excluding reboot signatures.
+-Offers several output options for wide screen terminals and character selection and many more
+
+
+On RHEL/CentOS/Fedora systems, download and install the .rpm package like this.
+
+# wget http://crunchtools.com/wp-content/files/petit/petit-current.rpm
+# rpm -i petit-current.rpm
+
+
+Hashing a Log File
+----------------------
+
+This is a straightforward petit function – it sums up the number of lines discovered in a log file. 
+It’s output comprises of the number of similar lines found in the log and what the group broadly 
+looked like as shown below.
+
+# petit --hash /var/log/yum.log  or  # petit --hash --fingerprint /var/log/messages
+
+
+Finding Number Of Lines Produced by a Daemon
+
+# petit --hash --daemon /var/log/syslog
+
+
+Finding Number Of Lines Produced by a Host
+
+# petit --host /var/log/syslog
+
+Performing a Word Count in a Log File
+
+# petit --wordcount /var/log/syslog
+
+Graphing a Log File
+
+This works in a key/value bar charting format, for side by side comparison of distributions 
+as shown in the examples below.
+To graph the first 60 seconds in a syslog,
+
+# petit --sgraph /var/log/syslog
+
+Tracking Particular Words in a Log File
+
+# cat /var/log/messages | grep error | petit --mgraph
+
+
+Check os version in Linux
+The procedure to find os name and version on Linux:
+
+Open the terminal application (bash shell)
+For remote server login using the ssh: ssh user@server-name
+
+Type any one of the following command to find os name and version in Linux:
+
+cat /etc/os-release
+lsb_release -a
+hostnamectl
+
+Type the following command to find Linux kernel version:
+uname -r
+
+Let us see all examples in detailed.
+
+/etc/os-release file
+
+Type the following cat command:
+
+$ cat /etc/os-release
+
+
+
+ls	Show directory contents (list the names of files).
+cd	Change Directory.
+mkdir	Create a new folder (directory).
+touch	Create a new file.
+rm	Remove a file.
+cat	Show contents of a file.
+pwd	Show current directory (full path to where you are right now).
+cp	Copy file/folder.
+mv	Move file/folder.
+grep	Search for a specific phrase in file/lines.
+find	Search files and directories.
+vi/nano	Text editors.
+history	Show last 50 used commands.
+clear	Clear the terminal screen.
+tar	Create & Unpack compressed archives.
+wget	Download files from the internet.
+du	Get file size.
