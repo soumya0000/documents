@@ -31,6 +31,24 @@ Agenda:
 
 
 
+What is collection and how it is created and managed ?
+=======================================================
+
+Agenda:
+-------
+
+-what is collection?
+-How to create collection?
+-How to create folder inside collection?
+-How to arrange request inside collection?
+
+
+-collection are group of API request that can stored and saved in logical arrangment.
+
+
+
+
+
 
 
 
