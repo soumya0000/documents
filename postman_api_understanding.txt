@@ -1,2 +1,36 @@
 postman Api:
 ==============
+-postman is a API client 
+-used to develop,test,share,document API
+-once you download in windows there is a chrome extention for postman called 
+ postman inceptor.
+
+Understanding postman UI(user interface)
+==========================================
+
+today agenda:
+-------------
+-about postman UI.
+-different section on the interface.
+-header, sidebar, builder.
+
+In view: if you want to see request and response side by side then go to view-->toggle-2-pane-view
+
+
+How to create my first API request and run in postman:
+=========================================================	
+
+Agenda:
+-------
+
+-How to create an API request?
+-How to run the request?
+-How to analyze the request?
+ 
+ Reqest endpoint: The place that APIs send requests and where the resource lives, is called an endpoint
+
+
+
+
+
+
