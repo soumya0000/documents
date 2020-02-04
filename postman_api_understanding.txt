@@ -44,6 +44,14 @@ Agenda:
 
 
 -collection are group of API request that can stored and saved in logical arrangment.
+-you can add folders to collection.
+-you can authorize each request which ask authentication for requests.
+
+
+-How to run collection?
+-How to analyze the results?
+
+
 
 
 
