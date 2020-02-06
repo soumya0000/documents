@@ -1,0 +1,15 @@
+
+-Installation and Initialization
+-Package management and Process monitoring
+-Important Files, Directories and Utilities
+-System Services
+-User Administration
+-File System Security and Management
+-Advanced file system management
+-Server configurations
+-Shell scripting & Kerberos Authentication
+-Samba & Mail services, Virtualization
+-Advanced security & Networking concepts
+-Database configuration
+-IPv6 configuration, Kickstart configuration
+-Project – Prepare for the RHCE Exam
